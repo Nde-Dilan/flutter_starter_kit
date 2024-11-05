@@ -4,8 +4,8 @@ import 'package:nerala_app/common/widgets/buttons/basic_app_button.dart';
 import 'package:nerala_app/core/configs/constants.dart';
 import 'package:nerala_app/core/configs/theme/app_colors.dart';
 
-class SignInPage extends StatelessWidget {
-  const SignInPage({super.key});
+class EnterPasswordPage extends StatelessWidget {
+  const EnterPasswordPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class SignInPage extends StatelessWidget {
             SizedBox(
               height: mediaWidth(context) / 6.5,
             ),
-            _emailField(context),
+            _passwordField(context),
             SizedBox(
               height: mediaWidth(context) / 4.5,
             ),
@@ -28,7 +28,7 @@ class SignInPage extends StatelessWidget {
             SizedBox(
               height: mediaWidth(context) / 7.5,
             ),
-            _createAccountText(context),
+            _forgotPassword(context),
           ],
         ),
       ),
@@ -42,35 +42,33 @@ class SignInPage extends StatelessWidget {
     );
   }
 
-  Widget _emailField(BuildContext context) {
+  Widget _passwordField(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
-          hintText: "Enter Email",
+          hintText: "Enter Password",
           hintStyle: AppTextStyles.h3.copyWith(color: AppColors.white)),
     );
   }
 
   Widget _continueButton() {
     return BasicAppButton(
-      onPressed: () {
-        
-      },
+      onPressed: () {},
       title: "Continue",
     );
   }
 
-  Widget _createAccountText(BuildContext context) {
+  Widget _forgotPassword(BuildContext context) {
     return RichText(
         text: TextSpan(children: [
       TextSpan(
-        text: "Don't have an account? ",
+        text: "Forgot password? ",
         style: AppTextStyles.h4.copyWith(color: AppColors.white),
       ),
       TextSpan(
         recognizer: TapGestureRecognizer()..onTap = () {
-          Navigator.pushNamed(context, '/signUp');
+          
         },
-        text: "Create One",
+        text: "Reset",
         style: AppTextStyles.h4.copyWith(color: AppColors.white,fontWeight: FontWeight.bold),
       )
     ]));
