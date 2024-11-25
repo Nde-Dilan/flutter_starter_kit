@@ -36,19 +36,21 @@ flutter pub get
 
 # Run the app
 flutter run
-📂 Folder Structure
-lib/: Main application code
-bloc/: BLoC files
-data/: Data models and repositories
-presentation/: UI components and screens
-domain/: Business logic and use cases
-🤝 Contributing
+```
+
+### 📂 Folder Structure
+- lib/: Main application code
+- bloc/: BLoC files
+- data/: Data models and repositories
+- presentation/: UI components and screens
+- domain/: Business logic and use cases
+### 🤝 Contributing
 We welcome contributions! Please follow these steps:
 
-Fork the repository
-Create a new branch (git checkout -b feature/amazing-feature)
-Commit your changes (git commit -m 'Add some amazing feature')
-Push to the branch (git push origin feature/amazing-feature)
-Open a Pull Request
+### Fork the repository
+- Create a new branch (git checkout -b feature/amazing-feature)
+- Commit your changes (git commit -m 'Add some amazing feature')
+- Push to the branch (git push origin feature/amazing-feature)
+- Open a Pull Request
 📄 License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
